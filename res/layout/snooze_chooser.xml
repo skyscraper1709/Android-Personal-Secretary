@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/snoozeChooserPage10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/snoozeChooserPage05"
+            android:layout_marginTop="24dp"
+            android:text="After 10 minutes please" />
+
+        <Button
+            android:id="@+id/snoozeChooserPage20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/snoozeChooserPage15"
+            android:layout_marginTop="26dp"
+            android:text="After 20 minutes please" />
+
+        <Button
+            android:id="@+id/snoozeChooserPage05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="28dp"
+            android:text="After 5 minutes please" />
+
+        <Button
+            android:id="@+id/snoozeChooserPage15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/snoozeChooserPage10"
+            android:layout_marginTop="16dp"
+            android:text="After 15 minutes please" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/snoozeChooserPageDoLater"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/snoozeChooserPageDoLater"
+            android:ems="10"
+            android:inputType="time" 
+            android:hint="       12.00am"
+            >
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/snoozeChooserPageDoLater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/snoozeChooserPage20"
+            android:layout_marginTop="16dp"
+            android:text="I will do it Later" />
+
+        <Button
+            android:id="@+id/snoozeChooserPageDoLaterTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="Do Remind Me" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/snoozeChooserPageDoLater"
+            android:ems="10"
+            android:inputType="date" 
+            android:hint="31/12/2013"
+            />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/snoozeChooserPageDoLater"
+            android:layout_alignBottom="@+id/snoozeChooserPageDoLater"
+            android:layout_alignLeft="@+id/editText2"
+            android:text=" on "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

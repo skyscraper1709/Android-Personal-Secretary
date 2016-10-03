@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:overScrollMode="ifContentScrolls"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbarStyle="insideOverlay"
+    android:scrollbars="vertical"
+    tools:context=".MainPage" >
+
+    <Button
+        android:id="@+id/showPageThanksButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        android:text="Thanks" />
+
+    <TextView
+        android:id="@+id/showPageDetailBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:text="Details"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/showPageTitleBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignParentTop="true"
+        android:text="showPageTitleBox"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/showPageDetailBoxBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/showPageThanksButton"
+        android:layout_alignLeft="@+id/showPageDetailBox"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/showPageDetailBox"
+        android:layout_marginTop="17dp"
+        android:text="showPageDetailBoxBottom+\n+showPageDetailBoxBottom+\n+showPageDetailBoxBottom+\n+showPageDetailBoxBottom+\n+showPageDetailBoxBottom+\n+showPageDetailBoxBottom+\n+showPageDetailBoxBottom+\n+showPageDetailBoxBottom+\n+showPageDetailBoxBottom+\n+showPageDetailBoxBottom" />
+
+    <Button
+        android:id="@+id/showPageSnoozeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/showPageThanksButton"
+        android:layout_alignBottom="@+id/showPageThanksButton"
+        android:layout_toRightOf="@+id/showPageThanksButton"
+        android:text="SN00ZE" />
+
+    <Button
+        android:id="@+id/showPageRescheduleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/showPageSnoozeButton"
+        android:layout_alignBottom="@+id/showPageSnoozeButton"
+        android:layout_toRightOf="@+id/showPageSnoozeButton"
+        android:text="reSchedule" />
+
+</RelativeLayout>
